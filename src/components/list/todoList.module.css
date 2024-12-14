@@ -1,0 +1,79 @@
+.todoList {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.filterBtnCont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.9em;
+}
+
+.task {
+  width: calc(100% - 30px);
+  height: 40px;
+  background-color: #1a1a1a;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  justify-content: space-between;
+  padding: 0 15px;
+  position: relative;
+}
+
+.redMark, .greenMark, .yellowMark{
+  width: 5px;
+  height: 100%;
+  background-color: rgb(177, 2, 2);
+  position: absolute;
+  left: -5px;
+  border-radius: 5px;
+}
+
+.greenMark {
+  background-color: rgb(7, 207, 7);
+}
+
+.yellowMark {
+  background-color: rgb(231, 231, 46);
+}
+
+.task p {
+  flex: 12;
+}
+
+.deleteTaskBtn {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  color: rgba(223, 10, 10, 0.692);
+  flex: 1;
+}
+
+.deleteTaskBtn:hover {
+  border-color: rgba(223, 10, 10, 0.692);
+}
+
+
+.moreTask {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: none;
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+
+.moreTask img {
+  width: 15px;
+}
